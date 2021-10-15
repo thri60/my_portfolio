@@ -20,18 +20,18 @@
               <p class="text-accent text-italic text-h5 text-weight-bolder">
                 Hi There, I'm
               </p>
-              <p class="text-bold text-h1 q-mr-md text-center">
+              <p translate="no" class="text-bold text-h1 q-mr-md text-center">
                 Michael
-                <span class="text-orange text-weight-regular"> Iheajumbu</span>
+                <span class="text-orange text-weight-regular">Iheajumbu</span>
               </p>
               <h1 class="text-italic">
                 I'm a
-                <span class="typed-text text-weight-bolder">{{
-                  typeValue
-                }}</span>
-                <span class="cursor" :class="{ typing: typeStatus }"
-                  >&nbsp;
+                <span class="typed-text text-weight-bolder">
+                  {{ typeValue }}
                 </span>
+                <span class="cursor" :class="{ typing: typeStatus }"
+                  >&nbsp;</span
+                >
               </h1>
               <div class="q-gutter-md">
                 <q-btn
@@ -79,9 +79,9 @@
                                   name="fas fa-envelope-open-text"
                                 />
                               </q-item-section>
-                              <q-item-section>
-                                Open your mail app
-                              </q-item-section>
+                              <q-item-section
+                                >Open your mail app</q-item-section
+                              >
                             </q-item>
                             <q-separator color="white" inset />
                             <q-item clickable>
@@ -89,7 +89,7 @@
                                 <q-icon name="fas fa-copy" />
                               </q-item-section>
                               <q-item-section>Copy to clipboard</q-item-section>
-                              <q-item-section side> </q-item-section>
+                              <q-item-section side></q-item-section>
                             </q-item>
                           </q-list>
                         </q-menu>
@@ -129,7 +129,7 @@
             </div>
             <div class="gt-sm col-12 col-md">
               <q-avatar rounded size="500px">
-                <img alt="Michael Iheajumbu" src="~assets/me.png" style="" />
+                <img alt="Michael Iheajumbu" src="~assets/me.png" style />
               </q-avatar>
             </div>
           </div>
@@ -140,6 +140,7 @@
       <img alt="wave" src="~assets/wave.svg" class="bg-primary" />
     </div>
 
+    <!-- portfolio section -->
     <div class="bg-secondary q-p-lg text-black">
       <q-card flat class="transparent">
         <p class="text-center text-bold text-h3 q-pt-md">Portfolio</p>
@@ -164,7 +165,10 @@
             <q-tab-panels v-model="Portfolio" animated class="transparent">
               <q-tab-panel name="aboutMe">
                 <div class="q-pa-md text-justify">
-                  <p>Hello, my name is <b>Michael,</b></p>
+                  <p>
+                    Hello, my name is
+                    <b>Michael,</b>
+                  </p>
                   <p class="text-weight-light">
                     I work as a resourceful and customer-focused Product
                     Designer, and Software Developer. I can assist you in
@@ -181,7 +185,7 @@
                   <div>
                     <q-btn
                       color="accent"
-                      to=""
+                      to
                       text-color="white"
                       label="Contact"
                     />
@@ -190,6 +194,13 @@
               </q-tab-panel>
 
               <q-tab-panel name="skill">
+                <div>
+                  <p class="text-weight-lighter">
+                    I'm constantly learning and keeping up with the latest
+                    technologies so that I can choose the best technology for
+                    the job.
+                  </p>
+                </div>
                 <div class="q-gutter-md">
                   <q-chip
                     clickable
@@ -198,9 +209,8 @@
                     color="accent"
                     text-color="white"
                     icon="fab fa-figma"
+                    >Figma</q-chip
                   >
-                    Figma
-                  </q-chip>
                   <q-chip
                     clickable
                     outline
@@ -208,9 +218,8 @@
                     color="accent"
                     text-color="white"
                     icon="fab fa-html5"
+                    >HTML</q-chip
                   >
-                    HTML
-                  </q-chip>
                   <q-chip
                     clickable
                     outline
@@ -218,9 +227,8 @@
                     color="accent"
                     text-color="white"
                     icon="fab fa-css3-alt"
+                    >CSS</q-chip
                   >
-                    CSS
-                  </q-chip>
                   <q-chip
                     clickable
                     outline
@@ -228,9 +236,8 @@
                     color="accent"
                     text-color="white"
                     icon="fab fa-js-square"
+                    >Javascript</q-chip
                   >
-                    Javascript
-                  </q-chip>
                   <q-chip
                     clickable
                     outline
@@ -238,9 +245,8 @@
                     color="accent"
                     text-color="white"
                     icon="fab fa-vuejs"
+                    >VueJs</q-chip
                   >
-                    VueJs
-                  </q-chip>
                   <q-chip
                     clickable
                     outline
@@ -282,7 +288,7 @@
                           </div>
                         </div>
                       </q-timeline-entry>
-                      <q-timeline-entry> </q-timeline-entry>
+                      <q-timeline-entry></q-timeline-entry>
                     </q-timeline>
                   </q-card-section>
                 </q-card>
@@ -293,90 +299,172 @@
       </q-card>
     </div>
 
+    <!-- services I offer section -->
     <div class="q-my-xl q-mx-md">
-      <p class="text-h3 text-bold text-">Ways I can help you</p>
+      <p class="text-h3 text-bold q-pl-md">Ways I can help you</p>
 
       <div class="q-py-xl">
-        <div class="row q-pa-md q-gutter-md">
-          <q-card bordered class="col-12 col-md-4 transparent">
-            <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
-              <img
-                alt="employee Management logo"
-                src="~assets/employeeManagement.png"
-                style="height: 60px; width: 70px"
-              />
-            </q-card-section>
+        <div class="row q-pa-md q-gutter-s">
+          <!-- design -->
+          <div class="col-12 col-md-3">
+            <q-card bordered class="transparent myCard">
+              <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
+                <img alt="figma logo" src="~assets/figma.svg" />
+              </q-card-section>
 
-            <q-card-section class="q-pl-xl q-mb-xl">
-              <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                In developing a userfriendly online platform
-              </div>
-              <div class="text-weight-light text-justify">
-                Yes, I can create an easy-to-use organisational platforms that
-                can be used to solve complex everyday business problems while
-                having an easy sync of information across multiple
-                departments/outlets in your organization, thus helping you
-                achieve your business goals faster and more effienciently.
-              </div>
-            </q-card-section>
-          </q-card>
-          <q-card bordered class="col-12 col-md-4 transparent">
-            <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
-              <img
-                alt="ecommerce logo"
-                src="~assets/ecommerce.png"
-                style="height: 60px; width: 100px"
-              />
-            </q-card-section>
+              <q-card-section class="q-pl-xl q-mb-xl">
+                <div class="text-h5 q-my-lg q-mb-xs text-bold">
+                  Designing a digital product for you
+                </div>
+                <div class="text-weight-light text-justify">
+                  From product design (UI/UX) to strategy, I use design to
+                  prototype solutions to complex problems and assist you in
+                  meeting your business objectives.
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
 
-            <q-card-section class="q-pl-xl q-mb-xl">
-              <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                In building a catchy and effiecient ecommerce platform
-              </div>
-              <div class="text-weight-light text-justify">
-                I build high-quality visually appealing ecommerce platforms that
-                significantly boost your sales. Remember that no matter what
-                you're selling, an ecommerce platform can help you easily reach
-                your potential customers faster with ease. The best part is that
-                the ecommerce platforms will be equipped with payment processors
-                that will allow you to receive funds in any currency of your
-                choosing.
-              </div>
-            </q-card-section>
-          </q-card>
-          <q-card bordered class="col-12 col-md-4 transparent">
-            <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
-              <img alt="figma logo" src="~assets/figma.svg" />
-            </q-card-section>
+          <div class="col-12 col-md-3">
+            <q-card bordered class="transparent myCard">
+              <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
+                <img
+                  alt="employee Management logo"
+                  src="~assets/employeeManagement.png"
+                  style="height: 60px; width: 70px"
+                />
+              </q-card-section>
 
-            <q-card-section class="q-pl-xl q-mb-xl">
-              <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                Designing a digital product for you
-              </div>
-              <div class="text-weight-light text-justify">
-                From product design (UI/UX) to strategy, I use design to
-                prototype solutions to complex problems and assist you in
-                meeting your business objectives.
-              </div>
-            </q-card-section>
-          </q-card>
-          <q-card bordered class="col-12 col-md-4">
-            <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
-              <img alt="figma logo" src="~assets/figma.svg" />
-            </q-card-section>
+              <q-card-section class="q-pl-xl q-mb-xl">
+                <div class="text-h5 q-my-lg q-mb-xs text-bold">
+                  In developing a userfriendly digital workspace
+                </div>
+                <div class="text-weight-light text-justify">
+                  Yes, I can create an easy-to-use organisational platforms that
+                  can be used to solve complex everyday business problems while
+                  having an easy sync of information across multiple
+                  departments/outlets in your organization, thus helping you
+                  achieve your business goals faster and more effienciently.
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
 
-            <q-card-section class="q-pl-xl q-mb-xl">
-              <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                Designing a digital product for you
-              </div>
-              <div class="text-weight-light">
-                From product design (UI/UX) to strategy, I solve complex
-                problems through design, so you can achieve your business goals
-              </div>
-            </q-card-section>
-          </q-card>
+          <div class="col-12 col-md-3">
+            <q-card bordered class="transparent myCard">
+              <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
+                <img
+                  alt="ecommerce logo"
+                  src="~assets/ecommerce.png"
+                  style="height: 60px; width: 100px"
+                />
+              </q-card-section>
+
+              <q-card-section class="q-pl-xl q-mb-xl">
+                <div class="text-h5 q-my-lg q-mb-xs text-bold">
+                  In building an effiecient ecommerce platform
+                </div>
+                <div class="text-weight-light text-justify">
+                  I build high-quality visually appealing ecommerce platforms
+                  that significantly boost your sales. Remember that no matter
+                  what you're selling, an ecommerce platform can help you easily
+                  reach your potential customers faster with ease. The best part
+                  is that the ecommerce platforms will be equipped with payment
+                  processors that will allow you to receive funds in any
+                  currency of your choosing.
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <q-card bordered class="myCard transparent q-pb-md">
+              <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
+                <img
+                  alt="system management logo"
+                  src="~assets/sysmgt.png"
+                  style="height: 60px; width: 90px"
+                />
+              </q-card-section>
+
+              <q-card-section class="q-pl-xl q-mb-xl">
+                <div class="text-h5 q-my-lg q-mb-xs text-bold">
+                  Designing a digital product for you
+                </div>
+                <div class="text-weight-light">
+                  What happens after you've created your website? Of course,
+                  management! My website management services ensure that you are
+                  always online, 24 hours a day, seven days a week. Never let a
+                  sale or an inquiry from a client pass you by. One of the
+                  services I provide under management is the addition of content
+                  to your website upon request, among other things. Contact me
+                  today and let's get your website up to speed and in good
+                  health.
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
         </div>
       </div>
+    </div>
+
+    <!-- contact me form -->
+    <div class="q-pa-lg q-gutter-xs row">
+      <div class="col-12 col-md-3">
+        <p class="text-h5">Quick Contact</p>
+        <div class="text-weight-lighter">
+          Don't like forms? Send me an email or contact me via my social handles. &#128522;
+        </div>
+
+        <div class="q-mt-md">
+          <q-list padding>
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon color="primary" name="far fa-envelope-open" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label overline>Email</q-item-label>
+                <q-item-label>michaeliheajumbu@gmail.com</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+          <q-list padding>
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon color="primary" name="fab fa-linkedin-in" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label overline>Linkedin Profile</q-item-label>
+                <q-item-label>Michael Iheajumbu</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+          <q-list padding>
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon color="primary" name="fab fa-whatsapp" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label overline>WhatsApp</q-item-label>
+                <q-item-label>+2348162229547</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+          <q-list padding>
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon color="primary" name="mail" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label overline>Twitter</q-item-label>
+                <q-item-label>@thri60</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-9"></div>
     </div>
   </q-page>
 </template>
@@ -386,6 +474,8 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "PageIndex",
+
+  components: {},
 
   setup() {
     return {
@@ -484,9 +574,10 @@ h1 {
   white-space: nowrap;
 }
 
-.myCard {
-  align-items: center;
-}
+/*.myCard {
+  width: 100%;
+  max-width: 24%;
+}*/
 
 @keyframes cursorBlink {
   49% {
