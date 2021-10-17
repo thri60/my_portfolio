@@ -1,76 +1,76 @@
 <template>
   <q-page class="bg-secondary">
 
+   <!-- hero section -->
+    <div class="bg-primary">
+              <div class="row q-gutter-md">
+                <div class=" text-white col-12 col-md-6 q-pt-md text-center q-mt-xl">
+                  <p class="text-accent text-h5 text-weight-bolder">
+                    &lt; Hello World! /&gt;
+                  </p>
+                  <p class="text-h6 text-bold"> It's </p>
+                  <p translate="no" class="text-bold gt-sm text-h2 text-center">
+                    Michael
+                    <p class="text-orange text-weight-regular">Iheajumbu</p>
+                  </p>
 
-<div class="bg-primary">
-          <div class="row q-gutter-md">
-            <div class=" text-white col-12 col-md-6 q-pt-md text-center q-mt-xl">
-              <p class="text-accent text-h5 text-weight-bolder">
-                 &lt; Hello World! /&gt;
-              </p>
-              <p class="text-h6 text-bold"> It's </p>
-              <p translate="no" class="text-bold gt-sm text-h2 text-center">
-                Michael
-                <p class="text-orange text-weight-regular">Iheajumbu</p>
-              </p>
+                    <!-- mobile -->
+                  <p translate="no" class="text-bold lt-sm text-h2 text-center">
+                    Michael
+                    <p class="text-orange text-weight-regular">Iheajumbu</p>
+                  </p>
+                  <h1 class="text-italic">
+                    I'm a
+                    <span class="typed-text text-weight-bolder">
+                      {{ typeValue }}
+                    </span>
+                    <span class="cursor" :class="{ typing: typeStatus }"
+                      >&nbsp;</span
+                    >
+                  </h1>
 
-                <!-- mobile -->
-              <p translate="no" class="text-bold lt-sm text-h2 text-center">
-                Michael
-                <p class="text-orange text-weight-regular">Iheajumbu</p>
-              </p>
-              <h1 class="text-italic">
-                I'm a
-                <span class="typed-text text-weight-bolder">
-                  {{ typeValue }}
-                </span>
-                <span class="cursor" :class="{ typing: typeStatus }"
-                  >&nbsp;</span
-                >
-              </h1>
+                  <!-- Hero Contact me button  -->
+                  <div class="q-gutter-md">
+                    <q-btn
+                      color="accent"
+                      label="Contact Me"
+                      outline
+                      rounded
+                      size="xl"
+                      type="a"
+                      target="_blank"
+                      href="mailto:michaeliheajumbu@gmail.com"
+                      no-caps
+                      style="width: 280px"
+                    >
 
-              <!-- Hero Contact me button  -->
-              <div class="q-gutter-md">
-                <q-btn
-                  color="accent"
-                  label="Contact Me"
-                  outline
-                  rounded
-                  size="xl"
-                  type="a"
-                  target="_blank"
-                   href="mailto:michaeliheajumbu@gmail.com"
-                  no-caps
-                  style="width: 280px"
-                >
-
-                </q-btn>
-                <q-btn
-                  color="white"
-                  rounded
-                  no-caps
-                  flat
-                  type="a"
-                  href="#services"
-                  push
-                  icon="fas fa-chevron-circle-down"
-                  text-color="accent"
-                  label="Ways I can help you"
-                />
+                    </q-btn>
+                    <q-btn
+                      color="white"
+                      rounded
+                      no-caps
+                      flat
+                      type="a"
+                      href="#services"
+                      push
+                      icon="fas fa-chevron-circle-down"
+                      text-color="accent"
+                      label="Ways I can help you"
+                    />
+                  </div>
+                </div>
+                <div class="bg lt-sm col-12 col-md-6 q-pl-xl">
+                  <q-avatar   size="245px">
+                    <img alt="Michael Iheajumbu" src="~assets/me.png" />
+                  </q-avatar>
+                </div>
+                <div class="bg gt-sm col-12 col-md">
+                  <q-avatar  size="500px">
+                    <img alt="Michael Iheajumbu" src="~assets/me.png"  />
+                  </q-avatar>
+                </div>
               </div>
-            </div>
-            <div class="bg lt-sm col-12 col-md-6 q-pl-xl">
-              <q-avatar   size="245px">
-                <img alt="Michael Iheajumbu" src="~assets/me.png" />
-              </q-avatar>
-            </div>
-            <div class="bg gt-sm col-12 col-md">
-              <q-avatar  size="500px">
-                <img alt="Michael Iheajumbu" src="~assets/me.png"  />
-              </q-avatar>
-            </div>
-          </div>
-</div>
+    </div>
     <div class="q-ma-none">
       <img alt="wave" src="~assets/wave.svg" class="bg-primary" />
     </div>
@@ -349,7 +349,87 @@
       </div>
     </div>
 
+    <div id="faq" class="row q-gutter-md q-pa-md">
+      <div class="col-12 col-md-5 q-pl-lg">
+        <p class="text-h3 text-bold">A few things clients normally ask me</p>
+        <div>
+          <q-list  class="rounded-borders">
+            <q-expansion-item
+              switch-toggle-side
+              expand-separator
+              label="Do you charge per hour or per project rate?"
+              popup default-opened
+            >
+              <q-card>
+                <q-card-section>
+                  I usually charge on a per-project basis. Instead of counting hours, I prefer to set a price and focus on creating something great.
+                </q-card-section>
+              </q-card>
+            </q-expansion-item>
+              <q-space class="q-pa-md"/>
+            <q-expansion-item
+              switch-toggle-side
+              expand-separator
+              popup
+              label="Do you outsource your work?"
+            >
+              <q-card>
+                <q-card-section>
+                  No. Although I occasionally collaborate with other experts as part of a team. Multiple inputs are made in this manner, and jobs are completed in less time. Remember the adage "two (more) heads are better than one?"
+                </q-card-section>
+              </q-card>
+            </q-expansion-item>
+              <q-space class="q-pa-md"/>
+            <q-expansion-item
+              switch-toggle-side
+              expand-separator
+              popup
+              label="We are in a different time zone than yours. is that okay?"
+            >
+              <q-card>
+                <q-card-section>
+                  Yes. Because roughly 80% of my clients are from Canada and the United States, I'm used to working with teams in different time zones than mine. I'm willing to adapt.
+                </q-card-section>
+              </q-card>
+            </q-expansion-item>
+              <q-space class="q-pa-md"/>
+            <q-expansion-item
+              switch-toggle-side
+              expand-separator
+              popup
+              label="Are we going to have daily calls?"
+            >
+              <q-card>
+                <q-card-section>
+                  It's entirely up to you! Some clients prefer daily check-ins, while others prefer weekly meetings. The most important thing is that you are comfortable with how we collaborate.
+                </q-card-section>
+              </q-card>
+            </q-expansion-item>
+              <q-space class="q-pa-md"/>
+            <q-expansion-item
+              switch-toggle-side
+              expand-separator
+              popup
+              label="Are you willing to work in an organisational setting?"
+            >
+              <q-card>
+                <q-card-section>
+                  Sure! Why not. As long as it will aid personal and the overall organisational growth.
+                </q-card-section>
+              </q-card>
+            </q-expansion-item>
+          </q-list>
+        </div>
+      </div>
+      <div class="gt-sm col-12 col-md-6 q-pt-xl float-right">
+                <img
+                  alt="faq"
+                  src="~assets/faq.svg"
+                  style="width: 680px"
+                />
+      </div>
 
+    </div>
 
     <!-- contact me form -->
     <div id="contact" class="q-pa-xl q-gutter-xs text-center">
@@ -450,7 +530,6 @@ export default defineComponent({
   components: {},
 
   setup() {
-
     return {
       typeValue: ref(""),
       typeStatus: ref("false"),
@@ -466,8 +545,6 @@ export default defineComponent({
       skill: ref("ContentWriting"),
       autoplay: ref("true"),
       Portfolio: ref("aboutMe"),
-
-
     };
   },
   methods: {
@@ -543,22 +620,18 @@ h1 {
 }
 /* End of Typer writer effect*/
 
-.firstCard{
+.firstCard {
   height: 550px;
 }
-.secondCard{
+.secondCard {
   height: 650px;
 }
-.thirdCard{
+.thirdCard {
   height: 750px;
 }
-.fourthCard{
+.fourthCard {
   height: 850px;
 }
-
-
-
-
 
 @keyframes cursorBlink {
   49% {
