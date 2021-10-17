@@ -228,7 +228,7 @@
                       </q-timeline-entry>
                       <q-timeline-entry>
                          <q-btn color="accent" rounded outline label="View my Resume" />
-                        
+
                       </q-timeline-entry>
                     </q-timeline>
                   </q-card-section>
@@ -349,7 +349,7 @@
       </div>
     </div>
 
-    
+
 
     <!-- contact me form -->
     <div id="contact" class="q-pa-xl q-gutter-xs text-center">
@@ -442,7 +442,7 @@
   </q-page>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, ref } from "vue";
 import useClipboard from "vue-clipboard3";
 
@@ -450,16 +450,6 @@ export default defineComponent({
   components: {},
 
   setup() {
-    const { toClipboard } = useClipboard();
-
-    const copy = async () => {
-      try {
-        await toClipboard("michaeliheajumbu@gmail.com");
-        alert("Copied to clipboard");
-      } catch (e) {
-        console.error(e);
-      }
-    };
 
     return {
       typeValue: ref(""),
@@ -477,7 +467,7 @@ export default defineComponent({
       autoplay: ref("true"),
       Portfolio: ref("aboutMe"),
 
-      copy,
+
     };
   },
   methods: {
