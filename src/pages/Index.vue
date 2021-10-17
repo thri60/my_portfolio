@@ -333,7 +333,7 @@
 
               <q-card-section class="q-pl-xl q-mb-xl">
                 <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                  Building an effiecient ecommerce platform
+                  Building an efficient ecommerce platform
                 </div>
                 <div class="text-weight-light text-justify">
                   I build high-quality visually appealing ecommerce platforms
