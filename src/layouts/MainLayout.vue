@@ -41,13 +41,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer class="transparent" elevated reveal>
-      <q-toolbar>
-        <q-toolbar-title class="text-right text-accent text-overline">
-          Design & Developed By Michael Iheajumbu &copy; 2021</q-toolbar-title
-        >
-      </q-toolbar>
-    </q-footer>
+
   </q-layout>
 </template>
 

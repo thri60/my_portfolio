@@ -3,34 +3,36 @@
 
    <!-- hero section -->
     <div class="bg-primary">
-              <div class="row q-gutter-md">
+              <div class="row">
                 <div class=" text-white col-12 col-md-6 q-pt-md text-center q-mt-xl">
                   <p class="text-accent text-h5 text-weight-bolder">
                     &lt; Hello World! /&gt;
                   </p>
                   <p class="text-h6 text-bold"> It's </p>
-                  <p translate="no" class="text-bold gt-sm text-h2 text-center">
+
+                  <!-- desktop -->
+                  <p translate="no" class="text-bold gt-sm text-h3 text-center">
                     Michael
                     <p class="text-orange text-weight-regular">Iheajumbu</p>
                   </p>
 
                     <!-- mobile -->
-                  <p translate="no" class="text-bold lt-sm text-h2 text-center">
+                  <p translate="no" class="text-bold lt-sm text-h4 text-center">
                     Michael
-                    <p class="text-orange text-weight-regular">Iheajumbu</p>
+                    <p class="text-orange">Iheajumbu</p>
                   </p>
-                  <h1 class="text-italic">
+                  <h4 class="text-italic">
                     I'm a
                     <span class="typed-text text-weight-bolder">
                       {{ typeValue }}
                     </span>
                     <span class="cursor" :class="{ typing: typeStatus }"
-                      >&nbsp;</span
+                      ></span
                     >
-                  </h1>
+                  </h4>
 
                   <!-- Hero Contact me button  -->
-                  <div class="q-gutter-md">
+                  <div class="q-gutter-xs">
                     <q-btn
                       color="accent"
                       label="Contact Me"
@@ -41,7 +43,7 @@
                       target="_blank"
                       href="mailto:michaeliheajumbu@gmail.com"
                       no-caps
-                      style="width: 280px"
+                      style="width: 250px"
                     >
 
                     </q-btn>
@@ -560,8 +562,15 @@
           </q-list>
         </div>
       </div>
+    </div>
 
 
+        <div class="bg-primary" >
+      <q-toolbar>
+        <q-toolbar-title class="text-right text-accent text-overline">
+          Design & Developed By Michael Iheajumbu &copy; 2021</q-toolbar-title
+        >
+      </q-toolbar>
     </div>
 
  <!-- place QPageScroller at end of page -->
@@ -644,15 +653,11 @@ export default defineComponent({
   background: url("../assets/blob.svg") center no-repeat;
   height: 100%;
 }
-.bg-contact {
-  background: url("../assets/googlehome.png") center no-repeat;
-  height: 100%;
-}
 
 /* begining of Typer writer effect*/
 
-h1 {
-  font-size: 2rem;
+h4 {
+  font-size: 1.5rem;
   font-weight: bolder;
   text-shadow: 40;
 
