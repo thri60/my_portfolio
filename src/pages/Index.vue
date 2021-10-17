@@ -78,7 +78,7 @@
     <!-- portfolio section -->
     <div class="bg-secondary q-p-lg text-black">
       <q-card flat class="transparent">
-        <p class="text-center text-bold text-h3 q-pt-md">Portfolio</p>
+        <p class="text-center text-bold text-h2 q-pt-md">Portfolio</p>
 
         <q-card-section class="row">
           <q-card-section class="col-12 col-md-4">
@@ -102,7 +102,8 @@
                 <div class="q-pa-md text-justify">
                   <p>
                     Hello, my name is
-                    <b>Michael,</b>
+                    <b class="text-h6 text-bold">Michael</b>
+                    and I'm based in Nigeria (available for remote gigs)
                   </p>
                   <p class="my-font text-weight-light">
                     I work as a resourceful and customer-focused Product
@@ -112,10 +113,30 @@
                   </p>
                   <p class="text-weight-light">
                     My strengths as an individual are analytical thinking and a
-                    constant desire to learn new technologies. I enjoy being a
+                    constant desire to learn new technologies. I also enjoy being a
                     part of any creative team that allows me to hone my
                     communication and coding abilities.
                   </p>
+
+                  <div>
+                    <p class="text-h5 text-bold">From experience regarding big  <br> to small clients, two things I always promise:</p>
+                     <div class="row q-gutter-lg">
+                      <div class="col-12 col-md-5">
+                       <p class="text-bold text-h6">
+                         <q-avatar color="primary" text-color="white" size="md">1</q-avatar>
+                        Designs you will love</p>
+                      <p>This is what I enjoy doing, so I'll make certain you're satisfied with the results.</p>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <p class="text-bold text-h6">
+                          <q-avatar color="primary" text-color="white" size="md">2</q-avatar>
+                          A healthy client relationship</p>
+                        <p>No dramas or difficult relationships. I'm here to make your life easier.</p>
+                      </div>
+                      </div>
+
+
+                  </div>
 
                   <div>
                     <q-btn
@@ -227,7 +248,11 @@
                         </div>
                       </q-timeline-entry>
                       <q-timeline-entry>
-                         <q-btn color="accent" rounded outline label="View my Resume" />
+                         <q-btn  color="accent" rounded outline label="View my Resume">
+                           <q-tooltip>
+                            In the works...
+                          </q-tooltip>
+                         </q-btn>
 
                       </q-timeline-entry>
                     </q-timeline>
@@ -242,7 +267,7 @@
 
     <!-- services I offer section -->
     <div id="services" class="q-my-xl q-mx-md q-pt-md">
-      <p class="text-h3 q-mt-xl text-bold q-ml-xl">Ways I can help you</p>
+      <p class="text-h2 q-mt-xl text-bold q-ml-xl">Ways I can help you</p>
 
       <div class="q-py-xl">
         <div class="row q-pa-md q-gutter-s">
@@ -349,16 +374,19 @@
       </div>
     </div>
 
+    <!-- FAQ -->
     <div id="faq" class="row q-gutter-md q-pa-md">
       <div class="col-12 col-md-5 q-pl-lg">
-        <p class="text-h3 text-bold">A few things clients normally ask me</p>
+        <p class="text-h2 text-bold q-pl-md">A few things clients normally ask me</p>
         <div>
           <q-list  class="rounded-borders">
             <q-expansion-item
               switch-toggle-side
               expand-separator
               label="Do you charge per hour or per project rate?"
-              popup default-opened
+              popup
+              default-opened
+               group="somegroup"
             >
               <q-card>
                 <q-card-section>
@@ -372,6 +400,7 @@
               expand-separator
               popup
               label="Do you outsource your work?"
+               group="somegroup"
             >
               <q-card>
                 <q-card-section>
@@ -385,6 +414,7 @@
               expand-separator
               popup
               label="We are in a different time zone than yours. is that okay?"
+               group="somegroup"
             >
               <q-card>
                 <q-card-section>
@@ -398,6 +428,7 @@
               expand-separator
               popup
               label="Are we going to have daily calls?"
+               group="somegroup"
             >
               <q-card>
                 <q-card-section>
@@ -411,6 +442,7 @@
               expand-separator
               popup
               label="Are you willing to work in an organisational setting?"
+               group="somegroup"
             >
               <q-card>
                 <q-card-section>
@@ -432,9 +464,24 @@
     </div>
 
     <!-- contact me form -->
-    <div id="contact" class="q-pa-xl q-gutter-xs text-center">
-      <div>
-        <p class="text-h3 text-bold">
+    <div id="contact" class="q-pa-xl row q-gutter-xs text-centersss q-mt-xl">
+      <div class="col-12 col-md-4">
+               <img
+                  alt="faq"
+                  src="~assets/googlehome.png"
+                  style="width: 500px"
+                  class="gt-sm"
+                >
+               <img
+                  alt="faq"
+                  src="~assets/googlehome.png"
+                  style="width: 300px"
+                  class="lt-md"
+                />
+      </div>
+
+      <div class="col-12 col-md-7">
+        <p class="text-h2 text-bold">
           That’s it! Now it’s your turn to say hi.
         </p>
         <div class="text-weight-light">
@@ -513,6 +560,8 @@
           </q-list>
         </div>
       </div>
+
+
     </div>
 
  <!-- place QPageScroller at end of page -->
@@ -593,6 +642,10 @@ export default defineComponent({
 <style lang="scss" scoped>
 .bg {
   background: url("../assets/blob.svg") center no-repeat;
+  height: 100%;
+}
+.bg-contact {
+  background: url("../assets/googlehome.png") center no-repeat;
   height: 100%;
 }
 

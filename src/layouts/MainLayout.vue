@@ -44,7 +44,7 @@
     <q-footer class="transparent" elevated reveal>
       <q-toolbar>
         <q-toolbar-title class="text-right text-accent text-overline">
-          Design & Developed By Michael Iheajumbu © 2021</q-toolbar-title
+          Design & Developed By Michael Iheajumbu &copy; 2021</q-toolbar-title
         >
       </q-toolbar>
     </q-footer>
