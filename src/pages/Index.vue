@@ -61,11 +61,14 @@
                     />
                   </div>
                 </div>
-                <div class="bg lt-sm col-12 col-md-6 q-pl-xl">
-                  <q-avatar   size="245px">
+                <!-- Mobile -->
+                <div class="bg lt-md col-12 col-md-6 q-pl-xl">
+                  <q-avatar class="q-ml-md"  size="245px">
                     <img alt="Michael Iheajumbu" src="~assets/me.png" />
                   </q-avatar>
                 </div>
+
+                <!-- desktop -->
                 <div class="bg gt-sm col-12 col-md">
                   <q-avatar  size="500px">
                     <img alt="Michael Iheajumbu" src="~assets/me.png"  />
