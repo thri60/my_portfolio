@@ -1,1 +1,18 @@
 // app global css in SCSS form
+@font-face {
+    font-family: 'customfont';
+      font-style: normal;
+  
+    src: url("../assets/fonts/NotoSansMono.woff");
+
+}
+@font-face {
+    font-family: 'customfont1';
+    src: url('/public/fonts/AndadaPro-Italic.tff') format('tff');
+
+}
+
+
+// body {
+//   font-family: 'Noto Sans Mono';
+// }

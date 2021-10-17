@@ -1,28 +1,23 @@
 <template>
   <q-page class="bg-secondary">
-    <div class="bg-primary">
-      <q-carousel
-        animated
-        v-model="slide"
-        infinite
-        transition-prev="slide-right"
-        transition-next="slide-left"
-        style="height: 550px"
-        class="bg-primary"
-      >
-        <q-carousel-slide
-          :name="1"
-          class="bg text-white"
-          img-src="~assets/blob.svg"
-        >
-          <div class="row q-gutter-md q-m-sm">
-            <div class="col-12 col-md q-pt-md text-center q-mt-xl">
-              <p class="text-accent text-italic text-h5 text-weight-bolder">
-                Hi There, I'm
+
+
+<div class="bg-primary">
+          <div class="row q-gutter-md">
+            <div class=" text-white col-12 col-md-6 q-pt-md text-center q-mt-xl">
+              <p class="text-accent text-h5 text-weight-bolder">
+                 &lt; Hello World! /&gt;
               </p>
-              <p translate="no" class="text-bold text-h1 q-mr-md text-center">
+              <p class="text-h6 text-bold"> It's </p>
+              <p translate="no" class="text-bold gt-sm text-h2 text-center">
                 Michael
-                <span class="text-orange text-weight-regular">Iheajumbu</span>
+                <p class="text-orange text-weight-regular">Iheajumbu</p>
+              </p>
+
+                <!-- mobile -->
+              <p translate="no" class="text-bold lt-sm text-h2 text-center">
+                Michael
+                <p class="text-orange text-weight-regular">Iheajumbu</p>
               </p>
               <h1 class="text-italic">
                 I'm a
@@ -33,109 +28,49 @@
                   >&nbsp;</span
                 >
               </h1>
+
+              <!-- Hero Contact me button  -->
               <div class="q-gutter-md">
                 <q-btn
                   color="accent"
                   label="Contact Me"
+                  outline
                   rounded
                   size="xl"
+                  type="a"
+                  target="_blank"
+                   href="mailto:michaeliheajumbu@gmail.com"
                   no-caps
                   style="width: 280px"
                 >
-                  <q-menu
-                    fit
-                    class="bg-primary shadow-6 text-white"
-                    transition-show="scale"
-                    transition-hide="scale"
-                  >
-                    <q-list style="min-width: 100px">
-                      <q-item clickable class="lt-md">
-                        <q-item-section avatar>
-                          <q-icon color="white" name="mail" />
-                        </q-item-section>
-                        <q-item-section>Email</q-item-section>
-                      </q-item>
-                      <q-item clickable class="gt-sm">
-                        <q-item-section avatar>
-                          <q-icon color="white" name="mail" />
-                        </q-item-section>
-                        <q-item-section>Email</q-item-section>
-                        <q-item-section side>
-                          <q-icon name="keyboard_arrow_right" color="white" />
-                        </q-item-section>
 
-                        <q-menu
-                          class="bg-primary shadow-6 text-white"
-                          transition-show="scale"
-                          transition-hide="scale"
-                          anchor="top end"
-                          self="top start"
-                        >
-                          <q-list>
-                            <q-item clickable>
-                              <q-item-section avatar>
-                                <q-icon
-                                  color="white"
-                                  name="fas fa-envelope-open-text"
-                                />
-                              </q-item-section>
-                              <q-item-section
-                                >Open your mail app</q-item-section
-                              >
-                            </q-item>
-                            <q-separator color="white" inset />
-                            <q-item clickable>
-                              <q-item-section avatar>
-                                <q-icon name="fas fa-copy" />
-                              </q-item-section>
-                              <q-item-section>Copy to clipboard</q-item-section>
-                              <q-item-section side></q-item-section>
-                            </q-item>
-                          </q-list>
-                        </q-menu>
-                      </q-item>
-                      <q-separator color="white" inset />
-                      <q-item clickable>
-                        <q-item-section avatar>
-                          <q-icon color="white" name="fab fa-whatsapp" />
-                        </q-item-section>
-                        <q-item-section>Whatsapp</q-item-section>
-                      </q-item>
-                      <q-separator color="white" inset />
-                      <q-item clickable class="lt-md">
-                        <q-item-section avatar>
-                          <q-icon color="white" name="fas fa-phone-alt" />
-                        </q-item-section>
-                        <q-item-section>Call</q-item-section>
-                      </q-item>
-                    </q-list>
-                  </q-menu>
                 </q-btn>
                 <q-btn
                   color="white"
                   rounded
                   no-caps
                   flat
+                  type="a"
+                  href="#services"
+                  push
                   icon="fas fa-chevron-circle-down"
                   text-color="accent"
-                  label="See My Work"
+                  label="Ways I can help you"
                 />
               </div>
             </div>
-            <div class="lt-sm col-12 col-md q-pl-xl">
-              <q-avatar rounded size="230px">
+            <div class="bg lt-sm col-12 col-md-6 q-pl-xl">
+              <q-avatar   size="245px">
                 <img alt="Michael Iheajumbu" src="~assets/me.png" />
               </q-avatar>
             </div>
-            <div class="gt-sm col-12 col-md">
-              <q-avatar rounded size="500px">
-                <img alt="Michael Iheajumbu" src="~assets/me.png" style />
+            <div class="bg gt-sm col-12 col-md">
+              <q-avatar  size="500px">
+                <img alt="Michael Iheajumbu" src="~assets/me.png"  />
               </q-avatar>
             </div>
           </div>
-        </q-carousel-slide>
-      </q-carousel>
-    </div>
+</div>
     <div class="q-ma-none">
       <img alt="wave" src="~assets/wave.svg" class="bg-primary" />
     </div>
@@ -169,10 +104,10 @@
                     Hello, my name is
                     <b>Michael,</b>
                   </p>
-                  <p class="text-weight-light">
+                  <p class="my-font text-weight-light">
                     I work as a resourceful and customer-focused Product
-                    Designer, and Software Developer. I can assist you in
-                    digitalizing your company's brand while increasing sales and
+                    Designer and Software Developer. I can assist you in
+                    digitalizing your idea or company's brand while increasing sales and
                     reach.
                   </p>
                   <p class="text-weight-light">
@@ -184,9 +119,12 @@
 
                   <div>
                     <q-btn
+                      outline
+                      rounded
                       color="accent"
-                      to
-                      text-color="white"
+                      type="a"
+                      href="#contact"
+                      push
                       label="Contact"
                     />
                   </div>
@@ -195,13 +133,13 @@
 
               <q-tab-panel name="skill">
                 <div>
-                  <p class="text-weight-lighter">
-                    I'm constantly learning and keeping up with the latest
-                    technologies so that I can choose the best technology for
-                    the job.
+                  <p class="text-weight-light text-right">
+                    Don't worry much about this... It just shows that I'm
+                    constantly learning and keeping up with the latest
+                    technologies so that I can choose the best tech for the job.
                   </p>
                 </div>
-                <div class="q-gutter-md">
+                <div class="q-gutter-sm">
                   <q-chip
                     clickable
                     outline
@@ -261,7 +199,7 @@
               </q-tab-panel>
 
               <q-tab-panel name="education">
-                <q-card class="my-card transparent">
+                <q-card flat class="my-card transparent">
                   <q-card-section>
                     <q-timeline color="accent">
                       <q-timeline-entry
@@ -288,7 +226,10 @@
                           </div>
                         </div>
                       </q-timeline-entry>
-                      <q-timeline-entry></q-timeline-entry>
+                      <q-timeline-entry>
+                         <q-btn color="accent" rounded outline label="View my Resume" />
+                        
+                      </q-timeline-entry>
                     </q-timeline>
                   </q-card-section>
                 </q-card>
@@ -300,14 +241,14 @@
     </div>
 
     <!-- services I offer section -->
-    <div class="q-my-xl q-mx-md">
-      <p class="text-h3 text-bold q-pl-md">Ways I can help you</p>
+    <div id="services" class="q-my-xl q-mx-md q-pt-md">
+      <p class="text-h3 q-mt-xl text-bold q-ml-xl">Ways I can help you</p>
 
       <div class="q-py-xl">
         <div class="row q-pa-md q-gutter-s">
           <!-- design -->
-          <div class="col-12 col-md-3">
-            <q-card bordered class="transparent myCard">
+          <div class="col-12 col-md-3 ">
+            <q-card bordered class="transparent firstCard">
               <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
                 <img alt="figma logo" src="~assets/figma.svg" />
               </q-card-section>
@@ -326,7 +267,7 @@
           </div>
 
           <div class="col-12 col-md-3">
-            <q-card bordered class="transparent myCard">
+            <q-card bordered flat class="secondCard transparent myCard">
               <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
                 <img
                   alt="employee Management logo"
@@ -337,7 +278,7 @@
 
               <q-card-section class="q-pl-xl q-mb-xl">
                 <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                  In developing a userfriendly digital workspace
+                  Developing a userfriendly digital workspace
                 </div>
                 <div class="text-weight-light text-justify">
                   Yes, I can create an easy-to-use organisational platforms that
@@ -351,7 +292,7 @@
           </div>
 
           <div class="col-12 col-md-3">
-            <q-card bordered class="transparent myCard">
+            <q-card bordered class="thirdCard transparent myCard">
               <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
                 <img
                   alt="ecommerce logo"
@@ -362,7 +303,7 @@
 
               <q-card-section class="q-pl-xl q-mb-xl">
                 <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                  In building an effiecient ecommerce platform
+                  Building an effiecient ecommerce platform
                 </div>
                 <div class="text-weight-light text-justify">
                   I build high-quality visually appealing ecommerce platforms
@@ -378,7 +319,7 @@
           </div>
 
           <div class="col-12 col-md-3">
-            <q-card bordered class="myCard transparent q-pb-md">
+            <q-card bordered flat class="fourthCard transparent q-pb-md">
               <q-card-section class="q-pt-xl q-mt-xl q-pl-xl">
                 <img
                   alt="system management logo"
@@ -389,7 +330,7 @@
 
               <q-card-section class="q-pl-xl q-mb-xl">
                 <div class="text-h5 q-my-lg q-mb-xs text-bold">
-                  Designing a digital product for you
+                  Manage and Maintain the digital product for you
                 </div>
                 <div class="text-weight-light">
                   What happens after you've created your website? Of course,
@@ -408,17 +349,28 @@
       </div>
     </div>
 
+    
+
     <!-- contact me form -->
-    <div class="q-pa-lg q-gutter-xs row">
-      <div class="col-12 col-md-3">
-        <p class="text-h5">Quick Contact</p>
-        <div class="text-weight-lighter">
-          Don't like forms? Send me an email or contact me via my social handles. &#128522;
+    <div id="contact" class="q-pa-xl q-gutter-xs text-center">
+      <div>
+        <p class="text-h3 text-bold">
+          That’s it! Now it’s your turn to say hi.
+        </p>
+        <div class="text-weight-light">
+          Feel free to just click and send me an email or contact me via my
+          social handles. &#128522;
         </div>
 
         <div class="q-mt-md">
           <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item
+              clickable
+              v-ripple
+              tag="a"
+              target="_blank"
+              href="mailto:michaeliheajumbu@gmail.com"
+            >
               <q-item-section avatar>
                 <q-icon color="primary" name="far fa-envelope-open" />
               </q-item-section>
@@ -429,7 +381,13 @@
             </q-item>
           </q-list>
           <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item
+              clickable
+              v-ripple
+              tag="a"
+              target="_blank"
+              href="https://www.linkedin.com/in/michael-iheajumbu-69a43b19a"
+            >
               <q-item-section avatar>
                 <q-icon color="primary" name="fab fa-linkedin-in" />
               </q-item-section>
@@ -440,20 +398,32 @@
             </q-item>
           </q-list>
           <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item
+              clickable
+              v-ripple
+              tag="a"
+              target="_blank"
+              href="https://github.com/thri60"
+            >
               <q-item-section avatar>
-                <q-icon color="primary" name="fab fa-whatsapp" />
+                <q-icon color="primary" name="fab fa-github" />
               </q-item-section>
               <q-item-section>
-                <q-item-label overline>WhatsApp</q-item-label>
-                <q-item-label>+2348162229547</q-item-label>
+                <q-item-label overline>Github</q-item-label>
+                <q-item-label>@thri60</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
           <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item
+              clickable
+              v-ripple
+              tag="a"
+              target="_blank"
+              href="https://twitter.com/thri60"
+            >
               <q-item-section avatar>
-                <q-icon color="primary" name="mail" />
+                <q-icon color="primary" name="fab fa-twitter" />
               </q-item-section>
               <q-item-section>
                 <q-item-label overline>Twitter</q-item-label>
@@ -463,21 +433,34 @@
           </q-list>
         </div>
       </div>
-
-      <div class="col-12 col-md-9"></div>
     </div>
+
+ <!-- place QPageScroller at end of page -->
+          <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
+            <q-btn fab icon="keyboard_arrow_up" color="accent" />
+          </q-page-scroller>
   </q-page>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, ref } from "vue";
+import useClipboard from "vue-clipboard3";
 
 export default defineComponent({
-  name: "PageIndex",
-
   components: {},
 
   setup() {
+    const { toClipboard } = useClipboard();
+
+    const copy = async () => {
+      try {
+        await toClipboard("michaeliheajumbu@gmail.com");
+        alert("Copied to clipboard");
+      } catch (e) {
+        console.error(e);
+      }
+    };
+
     return {
       typeValue: ref(""),
       typeStatus: ref("false"),
@@ -493,6 +476,8 @@ export default defineComponent({
       skill: ref("ContentWriting"),
       autoplay: ref("true"),
       Portfolio: ref("aboutMe"),
+
+      copy,
     };
   },
   methods: {
@@ -540,7 +525,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .bg {
-  background: url("../assets/blob.svg") right no-repeat;
+  background: url("../assets/blob.svg") center no-repeat;
   height: 100%;
 }
 
@@ -568,16 +553,22 @@ h1 {
 }
 /* End of Typer writer effect*/
 
-.horizontalScroll {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
+.firstCard{
+  height: 550px;
+}
+.secondCard{
+  height: 650px;
+}
+.thirdCard{
+  height: 750px;
+}
+.fourthCard{
+  height: 850px;
 }
 
-/*.myCard {
-  width: 100%;
-  max-width: 24%;
-}*/
+
+
+
 
 @keyframes cursorBlink {
   49% {
