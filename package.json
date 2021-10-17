@@ -1,8 +1,8 @@
 {
-    "name": "Michael's Portfolio",
+    "name": "michael_iheajumbu",
     "version": "0.0.1",
-    "description": "Michael's portfolio ",
-    "productName": "Michael's Portfolio",
+    "description": "michael portfolio ",
+    "productName": "Michael Portfolio",
     "author": "Michael <67415283+thri60@users.noreply.github.com>",
     "private": true,
     "scripts": {
@@ -12,9 +12,7 @@
         "@quasar/extras": "^1.0.0",
         "axios": "^0.21.1",
         "core-js": "^3.6.5",
-        "particlesjs": "^2.2.3",
         "quasar": "^2.0.0",
-        "vue-clipboard3": "^1.0.1",
         "vuex": "^4.0.1"
     },
     "devDependencies": {

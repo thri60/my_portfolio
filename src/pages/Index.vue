@@ -119,7 +119,7 @@
                   </p>
 
                   <div>
-                    <p class="text-h5 text-bold">From experience regarding big  <br> to small clients, two things I always promise:</p>
+                    <p class="text-h5 text-bold">From experience regarding big to small clients, two things I always promise:</p>
                      <div class="row q-gutter-lg">
                       <div class="col-12 col-md-5">
                        <p class="text-bold text-h6">
@@ -464,7 +464,7 @@
     </div>
 
     <!-- contact me form -->
-    <div id="contact" class="q-pa-xl row q-gutter-xs text-centersss q-mt-xl">
+    <div id="contact" class="q-pa-xl row q-gutter-xs text-center q-mt-xl">
       <div class="col-12 col-md-4">
                <img
                   alt="faq"
