@@ -573,7 +573,7 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-import useClipboard from "vue-clipboard3";
+// import useClipboard from "vue-clipboard3";
 
 export default defineComponent({
   components: {},
