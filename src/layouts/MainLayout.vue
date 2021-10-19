@@ -4,7 +4,7 @@
       <q-toolbar class="">
         <q-toolbar-title class="text-left">
           <q-avatar>
-            <img src="~assets/me.jpg" />
+            <img alt="Michael Iheajumbu" src="~assets/me.webp" />
           </q-avatar>
         </q-toolbar-title>
         <q-space />
