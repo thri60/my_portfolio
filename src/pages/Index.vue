@@ -158,13 +158,13 @@
               </q-tab-panel>
 
               <q-tab-panel name="skill">
-                <div>
+                <!-- <div>
                   <p class="text-weight-light text-right">
                     Don't worry much about this... It just shows that I'm
                     constantly learning and keeping up with the latest
                     technologies so that I can choose the best tech for the job.
                   </p>
-                </div>
+                </div> -->
                 <div class="q-gutter-sm">
                   <q-chip
                     clickable
@@ -656,6 +656,7 @@ export default defineComponent({
   background: url("../assets/blob.svg") center no-repeat;
   height: 100%;
 }
+
 
 /* begining of Typer writer effect*/
 
