@@ -253,10 +253,8 @@
                         </div>
                       </q-timeline-entry>
                       <q-timeline-entry>
-                         <q-btn  color="accent" rounded outline label="View my Resume">
-                           <q-tooltip>
-                            In the works...
-                          </q-tooltip>
+                         <q-btn type="a" target="_blank" href= "https://drive.google.com/file/d/1j2NqaJo0ARehRS95o-1SYH9K0f5sDTfh/view?usp=sharing" color="accent" rounded outline label="View my Resume">
+
                          </q-btn>
 
                       </q-timeline-entry>
